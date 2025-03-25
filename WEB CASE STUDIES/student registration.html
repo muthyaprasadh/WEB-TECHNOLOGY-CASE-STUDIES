@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #a1c4fd, #c2e9fb);
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        table {
+            width: 60%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        td {
+            padding: 10px;
+        }
+        input, select, textarea {
+            width: 95%;
+            padding: 8px;
+        }
+        .button {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align:center; color:#333;">Student Registration Form Using Table in HTML</h2>
+
+<form>
+    <table>
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" maxlength="30" required></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" maxlength="30" required></td>
+        </tr>
+        <tr>
+            <td>Email ID</td>
+            <td><input type="email" required></td>
+        </tr>
+        <tr>
+            <td>Mobile Number</td>
+            <td><input type="text" maxlength="10" required></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+            </td>
+        </tr>
+        <tr>
+            <td>Date of Birth (DOB)</td>
+            <td><input type="date" required></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><textarea rows="4"></textarea></td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td><input type="text" maxlength="30" required></td>
+        </tr>
+        <tr>
+            <td>Pin Code</td>
+            <td><input type="text" maxlength="6" required></td>
+        </tr>
+        <tr>
+            <td>State</td>
+            <td><input type="text" maxlength="30" required></td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td><input type="text" value="India"></td>
+        </tr>
+        <tr>
+            <td>Hobbies</td>
+            <td>
+                <input type="checkbox" name="hobby"> Drawing
+                <input type="checkbox" name="hobby"> Singing
+                <input type="checkbox" name="hobby"> Dancing
+                <input type="checkbox" name="hobby"> Sketching
+                <br>
+                <input type="checkbox" name="hobby"> Others
+                <input type="text" placeholder="Specify">
+            </td>
+        </tr>
+        <tr>
+            <td>Qualification</td>
+            <td>
+                <select>
+                    <option>Select Qualification</option>
+                    <option>High School (10th)</option>
+                    <option>Higher School (12th)</option>
+                    <option>Graduation</option>
+                    <option>Post Graduation</option>
+                    <option>Ph.D</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Courses Applied For</td>
+            <td>
+                <input type="radio" name="course"> BCA
+                <input type="radio" name="course"> B.Com
+                <input type="radio" name="course"> B.Sc
+                <input type="radio" name="course"> BA
+                <input type="radio" name="course"> MCA
+                <input type="radio" name="course"> M.Com
+                <input type="radio" name="course"> M.Sc
+                <input type="radio" name="course"> MA
+            </td>
+        </tr>
+        <tr class="button">
+            <td colspan="2">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
